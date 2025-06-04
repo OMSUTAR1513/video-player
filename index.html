@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video List with Close</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="video-list">
+    <div class="video-item">
+      <span>Big Buck Bunny</span>
+      <button onclick="playVideo('https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4')">Play</button>
+    </div>
+
+    <div class="video-item">
+      <span>Sintel</span>
+      <button onclick="playVideo('https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4')">Play</button>
+    </div>
+
+    <div class="video-item">
+      <span>Elephants Dream</span>
+      <button onclick="playVideo('https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4')">Play</button>
+    </div>
+  </div>
+
+  <div id="videoOverlay" class="hidden">
+    <button id="closeBtn" aria-label="Close Video">&times;</button>
+    <video id="fullscreenVideo" controls></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
